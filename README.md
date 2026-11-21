@@ -67,7 +67,7 @@ Of the 15 sign-ins I reviewed, these are the five I’d investigate first, in pr
 | --- | --- | --- | --- |
 | **P1** | #1 | `breakglass-02` | Treat as suspected unauthorised emergency access: an unmanaged device reached the admin console without an MFA prompt or alert, exposing privileged access without notifying the team. |
 | **P2** | #15 | `s.park` | Investigate as suspected session theft: a Singapore sign-in with unknown device status used an existing session to reach the patient portal nine minutes after Austin, putting patient data at risk. |
-| **P3** | #5 (related: #6) | `j.chen` | Investigate as suspected mailbox exposure: two successful IMAP sign-ins from Romania reached the finance mailbox through a flow that could not prompt for MFA. |
+| **P3** | #5 | `j.chen` | Investigate as suspected mailbox exposure: two successful IMAP sign-ins from Romania (#5 and #6) reached the finance mailbox through a flow that could not prompt for MFA. |
 | **P4** | #12 | `t.nguyen-admin` | Investigate as a privileged access risk: an unmanaged personal laptop reached the admin console using SMS MFA, so stolen credentials and a phished code could give an attacker console access. |
 | **P5** | #7 | `v.santos` | Investigate as a vendor access risk: the trusted partner VPN let a guest on an unmanaged device reach the billing app without an MFA prompt, leaving billing access exposed if the guest’s credentials were stolen. |
 
