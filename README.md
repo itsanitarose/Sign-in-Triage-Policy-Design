@@ -71,7 +71,7 @@ Of the 15 sign-ins I reviewed, these are the five I’d investigate first, in pr
 | **P4** | #12 | `t.nguyen-admin` | Investigate as a privileged access risk: an unmanaged personal laptop reached the admin console using SMS MFA, so stolen credentials and a phished code could give an attacker console access. |
 | **P5** | #7 | `v.santos` | Investigate as a vendor access risk: the trusted partner VPN let a guest on an unmanaged device reach the billing app without an MFA prompt, leaving billing access exposed if the guest’s credentials were stolen. |
 
-I ranked these by what each account could reach and what the log could not explain. P1–P5 show the order I would investigate them, not the severity of confirmed incidents..
+I ranked the sign-ins by potential impact, unusual activity, and weaknesses in sign-in controls.
 
 [02. Event Triage](Documents/02.%20Event%20Triage.md)
 
