@@ -61,19 +61,17 @@ I reviewed [15 sign-in events against six existing rules](Documents/01.%20Sign-i
 
 ## What I Found
 
-Five sign-ins to open, in this order.
+Of the 15 sign-ins I reviewed, these are the five I’d investigate first, in priority order.
 
-| Severity | Account | Risk |
-| --- | --- | --- |
-| 🔴 Critical | breakglass-02 | Emergency admin, no MFA, no alert. |
-| 🟠 High | s.park | Possible session theft. Austin, then Singapore nine minutes later. |
-| 🟠 High | j.chen | Finance mailbox over IMAP. MFA was impossible. |
-| 🟠 High | t.nguyen-admin | SMS on a personal laptop. The account is an admin. |
-| 🟡 Medium | v.santos | Partner VPN treated as identity. No MFA. |
+| Investigation priority | Event | Account | Why I’d investigate |
+| --- | --- | --- | --- |
+| **P1** | #1 | `breakglass-02` | Treat as suspected unauthorised emergency access: an unmanaged device reached the admin console without an MFA prompt or alert, exposing privileged access without notifying the team. |
+| **P2** | #15 | `s.park` | Investigate as suspected session theft: a Singapore sign-in with unknown device status used an existing session to reach the patient portal nine minutes after Austin, putting patient data at risk. |
+| **P3** | #5 (related: #6) | `j.chen` | Investigate as suspected mailbox exposure: two successful IMAP sign-ins from Romania reached the finance mailbox through a flow that could not prompt for MFA. |
+| **P4** | #12 | `t.nguyen-admin` | Investigate as a privileged access risk: an unmanaged personal laptop reached the admin console using SMS MFA, so stolen credentials and a phished code could give an attacker console access. |
+| **P5** | #7 | `v.santos` | Investigate as a vendor access risk: the trusted partner VPN let a guest on an unmanaged device reach the billing app without an MFA prompt, leaving billing access exposed if the guest’s credentials were stolen. |
 
-**Higher** means the log cannot explain it, and the account can do more damage. **Lower** means the likely user is visible, and the weakness is the control.
-
-**Not incidents.** k.malik at HQ: trusted location, managed device. Clinic tablet: MFA timed out because staff cannot use personal phones.
+I ranked these by what each account could reach and what the log could not explain. P1–P5 show the order I would investigate them, not the severity of confirmed incidents..
 
 [02. Event Triage](Documents/02.%20Event%20Triage.md)
 
