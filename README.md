@@ -46,6 +46,7 @@ Case status: In progress.
 
 Sign-in rules set up quickly and never reviewed leave gaps an attacker can use: a trusted network that skips MFA, a protocol that cannot ask for it, and a session that stays open. Yesterday's log shows those gaps in use.
 
+In a clinic, shared tablets introduce another concern: knowing who is actually signed in. If staff share accounts or inherit someone else’s session, patient information can be accessed without a reliable record of who accessed it.
 <BR>
 
 ## The Investigation
