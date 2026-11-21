@@ -63,7 +63,7 @@ I reviewed [15 sign-in events against six existing rules](Documents/01.%20Sign-i
 
 Of the 15 sign-ins I reviewed, these are the five I’d investigate first, in priority order.
 
-| Investigation priority | Event | Account | Why I’d investigate |
+| Investigation priority | Event | Account&nbsp;identifier | Why I’d investigate |
 | --- | --- | --- | --- |
 | **P1** | #1 | `breakglass-02` | Treat as suspected unauthorised emergency access: an unmanaged device reached the admin console without an MFA prompt or alert, exposing privileged access without notifying the team. |
 | **P2** | #15 | `s.park` | Investigate as suspected session theft: a Singapore sign-in with unknown device status used an existing session to reach the patient portal nine minutes after Austin, putting patient data at risk. |
