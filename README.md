@@ -44,10 +44,10 @@ Case status: In progress.
 
 ## What's the Risk?
 
-Sign-in rules set up quickly and never reviewed leave gaps an attacker can use: a trusted network that skips MFA, a protocol that cannot ask for it, and a session that stays open. Yesterday's log shows those gaps in use.
 
-In a clinic, shared tablets introduce another concern: knowing who is actually signed in. If staff share accounts or inherit someone else’s session, patient information can be accessed without a reliable record of who accessed it.
-<BR>
+Sign-in rules set up quickly and never reviewed can leave security gaps, weak default settings, or outdated login methods that attackers could exploit. The risk is unauthorised access to sensitive information or administrator accounts.
+
+Shared clinic tablets introduce another risk. If staff use the same account or inherit another person's session, it becomes difficult to know who accessed patient information or performed an action. This puts both patient privacy and individual accountability at risk.
 
 ## The Investigation
 
