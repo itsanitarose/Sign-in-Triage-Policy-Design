@@ -68,7 +68,7 @@ Five sign-ins to open, in this order.
 | 🔴 Critical | breakglass-02 | Emergency admin, no MFA, no alert. |
 | 🟠 High | s.park | Possible session theft. Austin, then Singapore nine minutes later. |
 | 🟠 High | j.chen | Finance mailbox over IMAP. MFA was impossible. |
-| 🟡 Medium | t.nguyen-admin | SMS on a personal laptop. The account is an admin. |
+| 🟠 High | t.nguyen-admin | SMS on a personal laptop. The account is an admin. |
 | 🟡 Medium | v.santos | Partner VPN treated as identity. No MFA. |
 
 **Higher** means the log cannot explain it, and the account can do more damage. **Lower** means the likely user is visible, and the weakness is the control.
