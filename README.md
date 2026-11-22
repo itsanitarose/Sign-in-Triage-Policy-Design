@@ -93,7 +93,7 @@ I ranked the sign-ins by potential impact, unusual activity, and weaknesses in s
 
 ## Reflection & Next Steps
 
-A suspicious sign-in does not prove an account was compromised. A successful sign-in does not prove the access was secure.
+This investigation reminded me why sign-in activity needs careful judgement. What looks suspicious is not always a compromised account, and a successful sign-in does not necessarily mean access was secure.
 
 The clinic exemption restored access, but staff still used a shared account. Before retiring it, I would test that the next employee sees a sign-in prompt rather than the previous employee’s patient data, then confirm they can sign in with their own account and hardware key without a personal phone.
 
