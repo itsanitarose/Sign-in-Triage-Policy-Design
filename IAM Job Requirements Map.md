@@ -1,8 +1,9 @@
 # IAM Skills Map
 
 **Northwind Health | Sign-in Triage & Policy Design**
-
 This map links IAM Analyst job requirements to the work completed in this case study. I reviewed the supplied sign-in log and designed replacement controls. I did not deploy or test the policies in a live tenant.
+
+<BR>
 
 | Job Requirement | Evidence in This Project |
 | --- | --- |
@@ -13,6 +14,8 @@ This map links IAM Analyst job requirements to the work completed in this case s
 | **Testing and Verification Planning** | [03. Proposed Sign-in Policies](Documents/03.%20Proposed%20Sign-in%20Policies.md) · [04. Shared Tablet Sign-In](Documents/04.%20Shared%20Tablet%20Sign-In.md): Replayed all 15 events to estimate policy impact. Defined two handover checks: the previous session is closed and the next employee can sign in with their own account and key. |
 | **Business Impact and Change Planning** | [04. Shared Tablet Sign-In](Documents/04.%20Shared%20Tablet%20Sign-In.md) · [05. Rollout Plan](Documents/05.%20Rollout%20Plan.md): Designed a sign-in method that does not require personal phones, explained the extra step at handover, and proposed a staged rollout with a pilot and rollback plan. |
 | **Security Documentation and Communication** | [Project README](README.md): Summarised which events to investigate first, what to change and what the replay projected. Distinguished proposed outcomes from live results. |
+
+<BR>
 
 ## Areas of Interest
 
