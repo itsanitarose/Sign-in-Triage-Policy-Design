@@ -86,7 +86,7 @@ I ranked the sign-ins by potential impact, unusual activity, and weaknesses in s
 - **Protect each tablet handover.** End the outgoing employee’s portal session before the next employee signs in with their own account and hardware key. No personal phone is needed. Retire the shared account only after Clinic 12 passes its access and handover checks. [Shared tablet sign-in](Documents/04.%20Shared%20Tablet%20Sign-In.md)
 - **Roll out in stages.** Review the rules in report-only mode, then pilot them with IT, one vendor group and Clinic 12. Roll back any rule that disrupts essential access. [Rollout plan](Documents/05.%20Rollout%20Plan.md)
 
-**Projected impact:** The proposed rules would have blocked or challenged 10 of the 15 recorded sign-ins. Three of those blocks depend on retiring the shared clinic account. I replayed the supplied log; I did not test the rules in a live tenant.
+**Projected impact:** The proposed rules would have blocked or challenged 9 of the 15 recorded sign-ins. Three of those blocks depend on retiring the shared clinic account. I replayed the supplied log; I did not test the rules in a live tenant.
 
 <BR>
 
@@ -97,8 +97,7 @@ A suspicious sign-in does not prove an account was compromised. A successful sig
 
 The clinic exemption restored access, but staff still used a shared account. Before retiring it, I would test that the next employee sees a sign-in prompt rather than the previous employee’s patient data, then confirm they can sign in with their own account and hardware key without a personal phone.
 
-The hardest call was #15. The Singapore event came nine minutes after the Austin sign-in, but the log did not show how old the session was. I marked #15 as a challenge under the proposed location-change rule, not the 12-hour limit. Before enforcing Policy 5, I would test whether Entra can detect the location change and require reauthentication during an active patient portal session. If it cannot, I would revise the policy and update the replay before rollout.
-
+The hardest call was #15. For the replay, I treated the 18:09 Singapore event as a continuation of the session that began in Austin at 18:00. On that assumption, only nine minutes had passed, so my proposed 12-hour rule would not have required reauthentication. The patient portal could address that gap by pausing access when it detects a change in network location and sending the user to Entra to reauthenticate. That portal control was outside the scope of my Entra-only redesign. I kept #15 as an investigation priority and did not count it as a challenge in the replay.
 <BR>
 
 ## Explore the Investigation
