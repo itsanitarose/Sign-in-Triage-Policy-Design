@@ -1,28 +1,17 @@
-
 # Sign-in Triage & Policy Design
 
-<table>
-<tr>
-<td>
-
-**Case at a Glance**
-
-Reviewed 15 sign-ins against the six rules in place, then designed the rules that should replace them.<BR>
 **IAM skills demonstrated:** Sign-in log analysis, risk triage, MFA policy design, and rollout planning.
 
-</td>
-</tr>
-</table>
+## 🎫The Ticket
 
-<BR>
-
-## 🎫 The Ticket
-
-It's 16 November 2026, my seventh week on the security team at Northwind Health. The company's sign-in rules were set up quickly and have never been revisited. This week's request is to review a day of sign-in activity and propose better rules without locking people out.
+It's 16 November 2026, my **7th week** at Northwind Health.&#x20;
 
 My manager writes:
 
+
 > Our sign-in rules were set up quickly and never revisited. Here's what we have today and a day of sign-in activity. I need to know which events worry you, and a better set of rules I can take to the IT director. Remember the front-desk staff at our clinics can't use their own phones.
+
+<BR>
 
 Supporting Information: [Sign-in Log & Current Rules](Documents/01.%20Sign-in%20Log%20%26%20Current%20Rules.md)
 
@@ -32,15 +21,20 @@ Supporting Information: [Sign-in Log & Current Rules](Documents/01.%20Sign-in%20
 <tr>
 <td>
 
-**The Decision**
+**Case at a Glance**
 
-Investigate `breakglass-02` first, then `s.park`. The first sign-in exposed admin access without an alert. The second put patient data at risk.<BR><BR>
-Remove MFA bypasses at HQ and on the partner VPN. Block older sign-in methods, with temporary exceptions for the scanner and old mail app. Require hardware keys for routine and emergency admin access, and a compliant device for routine admin access. Keep the clinic tablet shared, but give each employee their own account and key. Roll out the rules in stages.<BR><BR>
-**Case status:** Design complete. The policies were not deployed. 
+Investigate `breakglass-02` first, then `s.park`. The first reached the admin console with no MFA and no alert. The second reached the patient portal from Singapore nine minutes after Austin.<BR><BR>
+Remove MFA bypasses at HQ and on the partner VPN. Block older sign-in methods, with temporary exceptions for the scanner and old mail app. Require a hardware key and a compliant device for routine admin access. Alert on every emergency account sign-in. At the front desk, keep the tablet shared and give each staff member their own account and hardware key. No personal phone needed.<BR><BR>
+Turn the rules on in stages. Preview in report-only, pilot with IT, one vendor group and Clinic 12, and roll back any rule that stops essential work. Retire the shared account only after Clinic 12 passes the handover check.<BR><BR>
+**Projected impact:** 9 of 15 sign-ins would have been blocked or challenged. #15 stays an investigation. The 12-hour rule would not have stopped it.
 
 </td>
 </tr>
 </table>
+<BR><BR>
+
+## The Investigation in Detail:
+
 
 <BR>
 
