@@ -34,7 +34,9 @@ Supporting Information: [Sign-in Log & Current Rules](Documents/01.%20Sign-in%20
 
 **The Decision**
 
-Case status: In progress.
+Investigate `breakglass-02` first, then `s.park`. The first sign-in exposed admin access without an alert. The second put patient data at risk.<BR><BR>
+Remove MFA bypasses at HQ and on the partner VPN. Block older sign-in methods, with temporary exceptions for the scanner and old mail app. Require hardware keys for routine and emergency admin access, and a compliant device for routine admin access. Keep the clinic tablet shared, but give each employee their own account and key. Roll out the rules in stages.<BR><BR>
+**Case status:** Design complete. The policies were not deployed. 
 
 </td>
 </tr>
