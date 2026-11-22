@@ -98,6 +98,19 @@ A suspicious sign-in does not prove an account was compromised. A successful sig
 The clinic exemption restored access, but staff still used a shared account. Before retiring it, I would test that the next employee sees a sign-in prompt rather than the previous employee’s patient data, then confirm they can sign in with their own account and hardware key without a personal phone.
 
 The hardest call was #15. For the replay, I treated the 18:09 Singapore event as a continuation of the session that began in Austin at 18:00. On that assumption, only nine minutes had passed, so my proposed 12-hour rule would not have required reauthentication. The patient portal could address that gap by pausing access when it detects a change in network location and sending the user to Entra to reauthenticate. That portal control was outside the scope of my Entra-only redesign. I kept #15 as an investigation priority and did not count it as a challenge in the replay.
+
 <BR>
 
+
 ## Explore the Investigation
+
+| Document | Focus |
+| --- | --- |
+| [01. Sign-in Log & Current Rules](Documents/01.%20Sign-in%20Log%20%26%20Current%20Rules.md) | The 15 recorded sign-ins and the six rules in place at the time. |
+| [02. Event Triage](Documents/02.%20Event%20Triage.md) | The five sign-ins I’d investigate first and two that were likely legitimate. |
+| [03. Proposed Sign-in Policies](Documents/03.%20Proposed%20Sign-in%20Policies.md) | Six replacement rules and a replay of all 15 sign-ins. |
+| [04. Shared Tablet Sign-In](Documents/04.%20Shared%20Tablet%20Sign-In.md) | How clinic staff sign in without personal phones and what changes at handover. |
+| [05. Rollout Plan](Documents/05.%20Rollout%20Plan.md) | How to preview, pilot and expand the rules, and when to roll them back. |
+
+---
+[← Week 6: RBAC Role Redesign](https://github.com/itsanitarose/RBAC-Role-Redesign) · [All Case Studies](https://github.com/itsanitarose/IAM-Case-Studies)
