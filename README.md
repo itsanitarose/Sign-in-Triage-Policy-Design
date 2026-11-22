@@ -87,6 +87,18 @@ I ranked the sign-ins by potential impact, unusual activity, and weaknesses in s
 - **Roll out in stages.** Review the rules in report-only mode, then pilot them with IT, one vendor group and Clinic 12. Roll back any rule that disrupts essential access. [Rollout plan](Documents/05.%20Rollout%20Plan.md)
 
 **Projected impact:** The proposed rules would have blocked or challenged 10 of the 15 recorded sign-ins. Three of those blocks depend on retiring the shared clinic account. I replayed the supplied log; I did not test the rules in a live tenant.
+
+<BR>
+
+
 ## Reflection & Next Steps
+
+A suspicious sign-in does not prove an account was compromised. A successful sign-in does not prove the access was secure.
+
+The clinic exemption restored access, but staff still used a shared account. Before retiring it, I would test that the next employee sees a sign-in prompt rather than the previous employee’s patient data, then confirm they can sign in with their own account and hardware key without a personal phone.
+
+The hardest call was #15. The Singapore event came nine minutes after the Austin sign-in, but the log did not show how old the session was. I marked #15 as a challenge under the proposed location-change rule, not the 12-hour limit. Before enforcing Policy 5, I would test whether Entra can detect the location change and require reauthentication during an active patient portal session. If it cannot, I would revise the policy and update the replay before rollout.
+
+<BR>
 
 ## Explore the Investigation
