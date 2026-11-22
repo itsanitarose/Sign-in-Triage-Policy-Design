@@ -1,7 +1,8 @@
 # IAM Skills Map
 
 **Northwind Health | Sign-in Triage & Policy Design**
-This map links IAM Analyst job requirements to the work completed in this case study. I reviewed the supplied sign-in log and designed replacement controls. I did not deploy or test the policies in a live tenant.
+
+This map links IAM Analyst job requirements to the work completed in this case study.
 
 <BR>
 
@@ -17,7 +18,7 @@ This map links IAM Analyst job requirements to the work completed in this case s
 
 <BR>
 
-## Areas of Interest
+## 🔍 Areas of Interest
 
 - **Microsoft Entra ID:** Validating sign-in policies and reviewing report-only outcomes in a lab.
 - **PowerShell and Microsoft Graph:** Exporting and comparing sign-in records for repeatable investigations.
