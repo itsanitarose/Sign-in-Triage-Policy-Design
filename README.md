@@ -82,6 +82,11 @@ I ranked the sign-ins by potential impact, unusual activity, and weaknesses in s
 
 ## Decisions & Recommendations
 
+- **Close sign-in gaps.** Remove MFA bypasses at HQ and on the partner VPN. Block older sign-in methods that cannot support MFA, with temporary exceptions for the scanner and old mail app. Require a hardware key and a compliant device for routine admin access, and alert on every successful emergency account sign-in. [Proposed sign-in policies](Documents/03.%20Proposed%20Sign-in%20Policies.md)
+- **Protect each tablet handover.** End the outgoing employee’s portal session before the next employee signs in with their own account and hardware key. No personal phone is needed. Retire the shared account only after Clinic 12 passes its access and handover checks. [Shared tablet sign-in](Documents/04.%20Shared%20Tablet%20Sign-In.md)
+- **Roll out in stages.** Review the rules in report-only mode, then pilot them with IT, one vendor group and Clinic 12. Roll back any rule that disrupts essential access. [Rollout plan](Documents/05.%20Rollout%20Plan.md)
+
+**Projected impact:** The proposed rules would have blocked or challenged 10 of the 15 recorded sign-ins. Three of those blocks depend on retiring the shared clinic account. I replayed the supplied log; I did not test the rules in a live tenant.
 ## Reflection & Next Steps
 
 ## Explore the Investigation
