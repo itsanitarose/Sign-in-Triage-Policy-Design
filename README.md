@@ -4,7 +4,7 @@
 
 ## 🎫The Ticket
 
-It's 16 November 2026, my **7th week** at Northwind Health.&#x20;
+It's 16 November 2026, my **7th week** at Northwind Health.
 
 My manager writes:
 
