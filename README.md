@@ -33,7 +33,7 @@ Turn the rules on in stages. Preview in report-only, pilot with IT, one vendor g
 </table>
 <BR><BR>
 
-## The Investigation in Detail:
+
 
 
 <BR>
