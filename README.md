@@ -21,7 +21,7 @@ Supporting Information: [Sign-in Log & Current Rules](Documents/01.%20Sign-in%20
 <tr>
 <td>
 
-**Case at a Glance**
+**🛡️ Decision**
 
 Investigate `breakglass-02` first, then `s.park`. The first reached the admin console with no MFA and no alert. The second reached the patient portal from Singapore nine minutes after Austin.<BR><BR>
 Remove MFA bypasses at HQ and on the partner VPN. Block older sign-in methods, with temporary exceptions for the scanner and old mail app. Require a hardware key and a compliant device for routine admin access. Alert on every emergency account sign-in. At the front desk, keep the tablet shared and give each staff member their own account and hardware key. No personal phone needed.<BR><BR>
