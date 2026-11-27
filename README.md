@@ -105,4 +105,4 @@ The hardest call was #15. For the replay, I treated the 18:09 Singapore event as
 | [05. Rollout Plan](Documents/05.%20Rollout%20Plan.md) | How to preview, pilot and expand the rules, and when to roll them back. |
 
 ---
-[← Week 6: RBAC Role Redesign](https://github.com/itsanitarose/RBAC-Role-Redesign) · [All Case Studies](https://github.com/itsanitarose/IAM-Case-Studies)
+[← Week 6: RBAC Role Redesign](https://github.com/itsanitarose/RBAC-Role-Redesign) · [All Case Studies](https://github.com/itsanitarose) · [Week 8: Third-Party App Review →](https://github.com/itsanitarose/Third-Party-App-Review)
